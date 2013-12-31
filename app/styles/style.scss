@@ -9,8 +9,8 @@
 .diy-top{
 	@include showBorder(rgb(80, 133, 45));
 }
-.diy-left .panel-body{
-	height:500px;
+.diy-left .tab-pane{
+	height:450px;
 }
 .diy-center div{
 	@include showBorder(red);

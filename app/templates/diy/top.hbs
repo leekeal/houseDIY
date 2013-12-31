@@ -1,1 +1,23 @@
-<button class="btn btn-default" {{action "topButtonClick" on="click" target="view"}}>draw</button>
+<div class="btn-group">
+	<button type="button" class="btn btn-default dropdown-toggle btn-xs" data-toggle="dropdown">
+		File <span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li><a href="#">New File</a></li>
+		<li><a href="#">Open..</a></li>
+		<li><a href="#">Save</a></li>
+		<li class="divider"></li>
+		<li><a href="#">Close</a></li>
+	</ul>
+</div>
+
+
+<div class="btn-group">
+	<button type="button" class="btn btn-default dropdown-toggle btn-xs" data-toggle="dropdown">
+		Edit <span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li><a href="#">Copy</a></li>
+		<li><a href="#">Paste</a></li>
+	</ul>
+</div>
