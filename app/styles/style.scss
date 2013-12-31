@@ -9,12 +9,12 @@
 .diy-top{
 	@include showBorder(rgb(80, 133, 45));
 }
-.diy-left .tab-pane{
-	height:450px;
-}
-.diy-center div{
-	@include showBorder(red);
-}
-.diy-right .panel-body{
-	height:500px;
+// .diy-left .tab-pane{
+// 	height:100%;
+// }
+.diy-main {
+	.diy-main-height{
+		height:inherit;
+		@include showBorder(red);
+	}
 }
