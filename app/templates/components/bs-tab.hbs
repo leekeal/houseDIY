@@ -1,0 +1,12 @@
+<ul class="nav nav-tabs" id="myTab">
+	{{#each tabArray}}
+	<li><a {{bind-attr href = title }} data-toggle="tab">{{title}}</a></li>
+	{{/each}}
+
+</ul>
+
+<div class="tab-content">
+	{{#each tabArray}}
+	<div class="tab-pane" id="home">{{content}}</div>
+	{{/each}}
+</div>

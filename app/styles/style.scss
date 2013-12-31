@@ -1,0 +1,20 @@
+@import "bootstrap-sass/lib/bootstrap";
+
+/* Put your CSS here */
+
+@mixin showBorder($color){
+	border:1px solid $color;
+}
+
+.diy-top{
+	@include showBorder(rgb(80, 133, 45));
+}
+.diy-left .panel-body{
+	height:500px;
+}
+.diy-center div{
+	@include showBorder(red);
+}
+.diy-right .panel-body{
+	height:500px;
+}

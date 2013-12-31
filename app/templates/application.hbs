@@ -1,0 +1,32 @@
+<header class="container">  {{!-- header begin --}}
+	<nav class="navbar navbar-default" role="navigation" ng-controller="TopNavbarCtrl">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			{{#linkTo "index" class="navbar-brand"}}HouseDIY{{/linkTo}}
+		</div>
+
+		<!-- navbar menu -->
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav">
+				<li> {{#linkTo "index"}}Home{{/linkTo}}</li>
+				<li> {{#linkTo "diy"}}DIY{{/linkTo}}</li>
+				<li>{{#linkTo "about"}}About Us{{/linkTo}}</li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+</header> {{!-- header end --}}
+
+
+
+<div class="container">{{!-- main view --}}
+	{{outlet}}
+</div>
+
+
+<footer class="container">{{!-- footer begin --}}
+	<nav class="navbar navbar-default" role="navigation" ng-controller="TopNavbarCtrl">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/" target="_blank">Copyright By fwind</a>
+		</div>
+	</nav>
+</footer>{{!-- footer end --}}
