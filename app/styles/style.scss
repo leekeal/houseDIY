@@ -1,20 +1,32 @@
 @import "bootstrap-sass/lib/bootstrap";
 
 /* Put your CSS here */
-
+body{
+	min-width:640px;
+	margin : 0px 10px 5px 10px;
+}
 @mixin showBorder($color){
 	border:1px solid $color;
+}
+
+.showBorder{
+	@include showBorder(red);
 }
 
 .diy-top{
 	@include showBorder(rgb(80, 133, 45));
 }
-// .diy-left .tab-pane{
-// 	height:100%;
-// }
+
 .diy-main {
-	.diy-main-height{
-		height:inherit;
-		@include showBorder(red);
+	.diy-left{
+		.tab-content{
+			overflow-y: auto; 
+		}
+
+		#diy-left-structure{
+			.thumbnail img{
+				cursor:pointer;
+			}
+		}
 	}
 }

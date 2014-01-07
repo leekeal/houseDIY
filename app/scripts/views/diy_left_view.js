@@ -1,3 +1,5 @@
 App.DiyLeftView = Ember.View.extend({
-	templateName: 'diy/left',
+	dragStart:function(){
+		console.log(123)
+	}
 });
