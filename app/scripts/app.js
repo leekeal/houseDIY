@@ -8,5 +8,5 @@ require('scripts/models/*');
 require('scripts/routes/*');
 require('scripts/views/*');
 require('scripts/router');
-
-require('scripts/drawSvg');
+require('scripts/flat/Wall');
+require('scripts/flat/drawFlat');
